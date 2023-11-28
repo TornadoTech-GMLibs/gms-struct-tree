@@ -1,8 +1,9 @@
 {
   "FolderOrderSettings": [
-    {"name":"Objects","order":8,"path":"folders/Objects.yy",},
-    {"name":"Rooms","order":9,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":4,"path":"folders/Scripts.yy",},
+    {"name":"Tests","order":10,"path":"folders/Tests.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"room_empty","order":1,"path":"rooms/room_empty/room_empty.yy",},
+  ],
 }

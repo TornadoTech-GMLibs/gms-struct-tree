@@ -2,14 +2,14 @@
 function Tree(value = undefined) constructor {
 	self.value = value;
 	self.key = "root";
-	
-	layer = 0;
-	parent = undefined;
-	list = [];
+
+	self.layer = 0;
+	self.parent = undefined;
+	self.list = [];
 	
 	/// @param {String} key
 	/// @param {Any} value
-	/// @return {Undefined}
+	/// @return {Id.Instance<Struct.Tree>|Undefined}
 	static add = function(key, value = undefined) {
 		var tree = new Tree(value);
 		tree.key = key;
@@ -20,7 +20,7 @@ function Tree(value = undefined) constructor {
 	}
 	
 	/// @param {String} key
-	/// @return {Struct.Tree}
+	/// @return {Id.Instance<Struct.Tree>|Undefined}
 	static find = function(key) {
 		if (self.key == key) {
 			return self;
@@ -42,7 +42,6 @@ function Tree(value = undefined) constructor {
 	}
 	
 	/// @param {String} key
-	/// @return {Undefined}
 	static remove = function(key) {
 		var target = find(key);
 		array_delete(target.parent.list, target.get_index(), 1);
@@ -57,17 +56,24 @@ function Tree(value = undefined) constructor {
 	
 	/// @return {String}
 	static to_string = function() {
-		var result = string("[{0}]: {1}\n", key, value);
+		var result = $"[{key}]: {value}\n";
 		if (array_length(list) == 0) {
 			return result;
 		}
-		
+	
 		for (var  i = 0; i < array_length(list); i++) {
-			repeat(layer + 1) {
+			repeat (layer + 1) {
 				result += "_ ";
 			}
+
 			result += list[i].to_string();
 		}
+
 		return result;
+	}
+	
+	/// @return {String}
+	static toString = function() {
+		return to_string();
 	}
 }

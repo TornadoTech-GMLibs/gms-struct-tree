@@ -11,24 +11,24 @@
   },
   "defaultScriptType": 1,
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tests","folderPath":"folders/Tests.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"room_empty","path":"rooms/room_empty/room_empty.yy",},},
     {"id":{"name":"Tree","path":"scripts/Tree/Tree.yy",},},
-    {"id":{"name":"obj_tests","path":"objects/obj_tests/obj_tests.yy",},},
-    {"id":{"name":"room_tests","path":"rooms/room_tests/room_tests.yy",},},
+    {"id":{"name":"__Tests__","path":"scripts/__Tests__/__Tests__.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"room_tests","path":"rooms/room_tests/room_tests.yy",},},
+    {"roomId":{"name":"room_empty","path":"rooms/room_empty/room_empty.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
